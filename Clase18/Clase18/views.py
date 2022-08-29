@@ -4,16 +4,25 @@ from django.shortcuts import render
 
 
 
-def inicio(request):
-    return HttpResponse("Inicio")
+#def inicio(request):
+#    return HttpResponse("Inicio")
 
-def test(request):
+def inicio(request):
    mymembers = {'saludo':"Hola"}#"Members.objects.all().values()"
    template = loader.get_template('index.html')
    context = {
    'mymembers': mymembers,
    }
    return HttpResponse(template.render(context, request))
+
+
+def agregar(request):
+   mymembers = {'saludo':"Hola"}#"Members.objects.all().values()"
+   template = loader.get_template('agregar.html')
+   context = {
+   'mymembers': mymembers,
+   }
+   return HttpResponse(template.render(context, request))   
 
 #def test(request):
 #    nom="Pablo"

@@ -19,6 +19,6 @@ from Clase18.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('test/', test),
+    path('agregar/', agregar),
     path('inicio/', inicio),
 ]

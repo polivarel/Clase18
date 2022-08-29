@@ -1,5 +1,6 @@
 from django.http import HttpResponse
-from django.template import Template, Context, loader
+from django.template import Template
+from django.template import Context, loader
 
 def inicio(request):
     return HttpResponse("Inicio")

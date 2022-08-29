@@ -54,7 +54,7 @@ ROOT_URLCONF = 'Clase18.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:\Users\poliv\OneDrive\Documentos\Python\Clase18\Clase18\Clase18\plantillas'],
+        'DIRS': [ BASE_DIR / 'Clase18/plantillas'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
